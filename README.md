@@ -38,15 +38,10 @@
 
 | Project | Description | Tech |
 |---|---|---|
-| [AI Employee System](https://github.com/Aisha1124/Ai-employe-Bronze-tier) | Autonomous AI employee for task automation | Python, OpenAI SDK |
+| [AI Employee System](https://github.com/Aisha1124/Ai-employe-Bronze-tier) | Autonomous AI employee for task automation | Python |
 | [Shopping Agent](https://github.com/Aisha1124/Shopping_Agent) | Intelligent shopping assistant with CrewAI | CrewAI, Python |
 | [Restaurant AI](https://github.com/Aisha1124/Restaurant-Customer-Servive) | Customer service AI with 95% accuracy | OpenAI SDK, Python |
 | [Orchestration System](https://github.com/Aisha1124/Orchestration_Management_System) | Multi-agent orchestration management | Python |
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Aisha1124&show_icons=true&theme=tokyonight" />
-</p>
