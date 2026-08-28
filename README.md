@@ -34,30 +34,11 @@
 
 ---
 
-### 🏆 Featured Project: ResolveAI
-
-**AI complaint-service agent for retail digital banking** — built solo for a national banking innovation hackathon (Team H15, AI in Banking theme).
-
-Takes voice and text intake in Roman Urdu and English, asks one clarifying question, classifies the complaint, routes it deterministically to a department, and issues a case number. In a later session, it recalls the case and reports status straight from the database — no case number needed from the customer.
-
-> ⚠️ *Independent prototype built against a mock banking core. Not affiliated with, endorsed by, or connected to any bank; touches no production system or real customer data.*
-
-**Key design decisions:**
-- 🧭 **LLM classifies, a lookup table routes** — classification is the model's job, but category → department mapping is a dictionary, so routing stays deterministic and auditable
-- 🔒 **One mutator for status** — every status change writes the case update and its event-log row in the same transaction, so a case can never have a status without a matching timeline entry
-- 🚫 **Zero money-movement tools by design** — the agent can only state facts returned by its tools; it cannot transfer, refund, reverse, or block anything
-- 🔁 **Cross-session recall via pgvector** — returning customers are matched against stored case embeddings in the database, not chat history, so recall works even in a brand-new session
-
-**Tech:** Python 3.11 · FastAPI · OpenAI Agents SDK (GPT-4o) · Whisper STT + OpenAI TTS · text-embedding-3-small + pgvector · PostgreSQL (Neon) · Vanilla JS + Tailwind
-
-🔗 [View Repository](https://github.com/Aisha1124/ResolveAI)
-
----
-
-### 🚀 Other Projects
+### 🚀 Featured Projects
 
 | Project | Description | Tech |
 |---|---|---|
+| [ResolveAI](https://github.com/Aisha1124/ResolveAI) | AI complaint-service agent for retail digital banking — voice/text intake in Roman Urdu & English, deterministic routing, cross-session case recall via pgvector | OpenAI Agents SDK, FastAPI, PostgreSQL |
 | [AI Employee System](https://github.com/Aisha1124/Ai-employe-Bronze-tier) | Autonomous AI employee for task automation | Python |
 | [Shopping Agent](https://github.com/Aisha1124/Shopping_Agent) | Intelligent shopping assistant with CrewAI | CrewAI, Python |
 | [Orchestration System](https://github.com/Aisha1124/Orchestration_Management_System) | Multi-agent orchestration management | Python |
